@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Клуб четырех коней</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script defer="" src="main.js"></script>
+</head>
+<body class="page">
+	<header class="header">
+		<div class="header__content">
+			<img class="logo" src="images/logo.svg" alt="Логотип Клуб четырех коней в виде четырех коней">
+		</div>
+	</header>
+	<main class="main">
+		<section class="introduction">
+			<div class="introduction__content">
+				<h1 class="visually-hidden">Клуб четырех коней</h1>
+				<span class="introduction__heading">Превратите<br> уездный город<br>    в столицу<br>  земного шара</span>
+				<span class="introduction__text">Оплатите взнос на телеграммы для организации<br> Международного васюкинского турнира по шахматам</span>
+				<div class="introduction__buttons">
+					<a class="action-button action-button_def introduction__support" href="#seance">Поддержать шахматную мысль</a>
+					<a class="action-button action-button_transp introduction__details" href="#stages">Подробнее о турнире</a>
+				</div>
+			</div>
+		</section>
+		<template id="marquee">
+			<div class="marquee__content">
+				<span class="marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+				<span class="marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+				<span class="marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+			</div>
+			<div role="presentation" class="marquee__content">
+				<span aria-hidden="true" class="marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+				<span aria-hidden="true" class="marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+				<span aria-hidden="true" class="marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+			</div>
+		</template>
+		<div class="marquee"></div>
+		<section class="lecture">
+			<p class="lecture__text">Чтобы поддержать<br> Международный васюкинский турнир посетите лекцию на тему: <span class="lecture__text lecture__text_accent">«Плодотворная дебютная идея»</span></p>
+			<img class="lecture_img" src="images/lecture.jpg" alt="Фото шахматистов за игрой">
+		</section>
+		<section class="seance" id="seance">
+			<img class="seance__img" src="images/seance.jpg" alt="Фото шахматиста">
+			<div class="seance__content">
+				<p class="seance__text">и Сеанс <span class="seance__text seance__text_accent">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</p>
+				<table class="seance__info">
+					<tbody>
+						<tr>
+							<td>Место проведения:</td>
+							<td>Клуб «Картонажник»</td>
+						</tr>
+						<tr>
+							<td>Дата и время мероприятия:</td>
+							<td>22 июня 1927 г. в 18:00</td>
+						</tr>
+						<tr>
+							<td>Стоимость входных билетов:</td>
+							<td>20 коп.</td>
+						</tr>
+						<tr>
+							<td>Плата за игру:</td>
+							<td>50 коп.</td>
+						</tr>
+						<tr>
+							<td>Взнос на телеграммы:</td>
+							<td><del class="seance__old-price">100 руб.</del> 21 руб. 16 коп.</td>
+						</tr>
+					</tbody>
+				</table>
+				<a class="seance__ask" href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
+			</div>
+		</section>
+		<section class="stages" id="stages">
+			<h2 class="stages__heading">Этапы преображения<br> Васюков</h2>
+			<span class="stages__subheading">Будущие источники<br> обогащения васюкинцев</span>
+			<div class="stages__content">
+				<ol class="stages__list" style="transform: translateX(-300%);">
+					<li>Строительство железнодорожной магистрали Москва-Васюки</li>
+					<li>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
+					<li>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
+					<li>Строительство дворца для турнира</li>
+					<li>Размещение гаражей для гостевого автотранспорта</li>
+					<li>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
+					<li>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+					</li>
+				</ol>
+			</div>
+			<div class="stages__switch-bts">
+				<button class="stages__btn stages__prev"></button>
+				<span class="stages__page-count">
+					<button class="stages__slide-btn"></button>
+					<button class="stages__slide-btn"></button>
+					<button class="stages__slide-btn"></button>
+					<button class="stages__slide-btn stages__slide-btn_active"></button>
+					<button class="stages__slide-btn"></button>
+				</span>
+				<button class="stages__btn stages__next"></button>
+			</div>
+		</section>
+		<section class="guests">
+			<div class="guests__header">
+				<h2 class="guests__heading">Участники турнира</h2>
+				<div class="guests__switch-bts">
+					<button class="guests__btn guests__prev"></button>
+					<span class="guests__page-count"><span class="guests__curr-count">2</span> / <span class="guests__max-count">2</span></span>
+					<button class="guests__btn guests__next"></button>
+				</div>
+			</div>
+			<div class="guests__slider">
+				<div class="guests__content" style="transform: translateX(-100%);">
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+					<section class="guests__item">
+						<img class="guests__ava" src="images/ava.png" alt="">
+						<h3 class="guests__name">Хозе-Рауль Капабланка</h3>
+						<span class="guests__about">Чемпион мира по шахматам</span>
+						<a class="guests__link" href="#">Подробнее</a>
+					</section>
+				</div>
+			</div>
+		</section>
+		<div class="marquee">
+			<div class="marquee__content">
+				<span class="marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+				<span class="marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+				<span class="marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+			</div>
+			<div role="presentation" class="marquee__content">
+				<span aria-hidden="true" class="marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+				<span aria-hidden="true" class="marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+				<span aria-hidden="true" class="marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p class="footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+	</footer>
